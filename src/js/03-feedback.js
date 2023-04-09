@@ -21,7 +21,7 @@ if (dataUserForm) {
 
 formEl.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log(localStorage.getItem('feedback-form-state'));
+    console.log(JSON.parse(localStorage.getItem('feedback-form-state')));
     localStorage.clear();
     formEl.reset();
 })
